@@ -14,6 +14,7 @@
 @interface AnimationViewController ()
 @property (nonatomic, strong) UIButton *spinButton;
 @property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) AVAudioPlayer *player;
 @end
 
 @implementation AnimationViewController
@@ -124,6 +125,13 @@
 
 -(void)didPressSpinButton:(UIButton *)spinButton {
     NSLog(@"Spin!!");
+    
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"button" ofType:@"mp3"];
+    NSURL *url = [NSURL URLWithString:path];
+    _player = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:NULL];
+    [_player play];
+    
     CABasicAnimation *rotation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotation.fromValue = [NSNumber numberWithFloat:0];
     rotation.toValue = [NSNumber numberWithFloat:((360*M_PI)/180)];

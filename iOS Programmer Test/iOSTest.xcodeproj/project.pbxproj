@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03BDE555200577BC001F7934 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03BDE554200577BC001F7934 /* AVFoundation.framework */; };
 		F21312DA1E0481F80029E33F /* ChatClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F21312D71E0481F80029E33F /* ChatClient.m */; };
 		F21312DB1E0481F80029E33F /* LoginClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F21312D91E0481F80029E33F /* LoginClient.m */; };
 		F21312E01E0485B50029E33F /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21312DE1E0485B50029E33F /* AnimationViewController.m */; };
@@ -53,6 +54,8 @@
 		031E33E920055913008874B1 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		031E33EA20055913008874B1 /* SBJsonWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		031E33EB20055913008874B1 /* SBJsonWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		03BDE554200577BC001F7934 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		03BDE55B20057A62001F7934 /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button.mp3; sourceTree = "<group>"; };
 		F21312D61E0481F80029E33F /* ChatClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatClient.h; path = Clients/ChatClient.h; sourceTree = "<group>"; };
 		F21312D71E0481F80029E33F /* ChatClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatClient.m; path = Clients/ChatClient.m; sourceTree = "<group>"; };
 		F21312D81E0481F80029E33F /* LoginClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginClient.h; path = Clients/LoginClient.h; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03BDE555200577BC001F7934 /* AVFoundation.framework in Frameworks */,
 				F273B8341D95C3000069037F /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +136,7 @@
 		F21312DC1E0485A50029E33F /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				03BDE55B20057A62001F7934 /* button.mp3 */,
 				F21312DD1E0485B50029E33F /* AnimationViewController.h */,
 				F21312DE1E0485B50029E33F /* AnimationViewController.m */,
 				F21312DF1E0485B50029E33F /* AnimationViewController.xib */,
@@ -222,6 +227,7 @@
 		F273B8321D95C3000069037F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03BDE554200577BC001F7934 /* AVFoundation.framework */,
 				F273B8331D95C3000069037F /* ImageIO.framework */,
 			);
 			name = Frameworks;
