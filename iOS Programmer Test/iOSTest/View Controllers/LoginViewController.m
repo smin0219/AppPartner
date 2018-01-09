@@ -103,6 +103,7 @@
     textField.layer.cornerRadius = 10;
     textField.layer.borderColor = [[UIColor colorWithRed:0.61 green:0.61 blue:0.61 alpha:1.0]CGColor];
     textField.layer.borderWidth = 1.0f;
+    textField.clearButtonMode = UITextFieldViewModeWhileEditing;
 
     self.loginTextField = textField;
      // Adds the textField to the view.
@@ -142,6 +143,8 @@
     textField.layer.cornerRadius = 10;
     textField.layer.borderColor = [[UIColor colorWithRed:0.61 green:0.61 blue:0.61 alpha:1.0]CGColor];
     textField.layer.borderWidth = 1.0f;
+    textField.secureTextEntry = YES;
+    textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     
     self.passwordTextField = textField;
     // Adds the textField to the view.

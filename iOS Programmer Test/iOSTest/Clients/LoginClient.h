@@ -10,4 +10,5 @@
 
 @interface LoginClient : NSObject
 - (void)loginWithUsername:(NSString *)username password:(NSString *)password completion:(void (^)(NSDictionary *))completion;
+
 @end

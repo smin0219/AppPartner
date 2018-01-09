@@ -21,6 +21,5 @@
 - (void)setLoginImageConstraint;
 - (void)setLoginButtonConstraint;
 - (void)didPressLoginButton:(UIButton *)loginButton;
-- (void)textFieldDidEndEditing:(UITextField *)textField;
 
 @end
